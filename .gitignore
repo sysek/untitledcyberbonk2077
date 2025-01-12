@@ -1,0 +1,7 @@
+#### python
+.venv
+__pycache__
+
+
+#### misc
+.projectile
