@@ -5,3 +5,6 @@ __pycache__
 
 #### misc
 .projectile
+auto-save-list
+.\#*
+.kateproject
