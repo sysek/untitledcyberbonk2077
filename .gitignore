@@ -8,3 +8,7 @@ __pycache__
 auto-save-list
 .\#*
 .kateproject
+
+#### project
+db/
+dev/
