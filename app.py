@@ -46,7 +46,6 @@ def menu():
                 running = False
                 break
             elif timetochoose == "F" or timetochoose == "f":
-                breakpoint()
                 game.clean_screen()
                 winorloose = game.figth_mode(player, dummykid)
                 if winorloose == 0:

@@ -1,7 +1,7 @@
 class Player:
 
     """
-    Zmienna BODY - wykorzystywana do ubioru bohatera, trzymania broni etc. 
+    Zmienna BODY - wykorzystywana do ubioru bohatera, trzymania broni etc.
     """
     BODY = {
         "HEAD": 0,

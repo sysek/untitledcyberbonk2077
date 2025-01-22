@@ -71,9 +71,7 @@ class Game:
 
     def stats(self):
         """
-        stats: playerClass
-        Funkcja uzywania do wygenerowania statystyk dla gracza badz
-        jakiegos zbira (test)
+        Funkcja do generowania statystyk dla gracza
         """
 
         STATs = {
