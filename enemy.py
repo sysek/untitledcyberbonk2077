@@ -1,11 +1,7 @@
-
-
 class Enemy:
-    
     def __init__(self):
         self.name = "Dummy"
-        self.hp = 10
-        self.mp = 0
+        self.HP = 10
 
     def show_dummy(self):
         print(f"Name: {self.name}")
