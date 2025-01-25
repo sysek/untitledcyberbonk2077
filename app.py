@@ -1,3 +1,4 @@
+import os
 from game import Game
 from player import Player
 from enemy import Enemy
@@ -7,7 +8,7 @@ game = Game()
 STATs = game.stats()
 
 # PLAYER SECTION
-player = Player("キーウィ")
+# player = False
 
 # DUMMY SECTION
 dummykid = Enemy()
@@ -27,12 +28,32 @@ def logo():
     print(logo)
 
 
+def init():
+    """
+    ENUM LIST
+    0 - cwd
+    1 - player_status
+    """
+
+    cwd = os.getcwd()
+    player_status = False
+
+    return cwd, player_status
+
+
 def menu():
+    cwd, player_status = init()
     running = True
+
     while running:
-        if player is False:
+        if player_status is False:
             print("--- CREATE CHARACTER ___")
-            game.create_character()
+            status, player = game.create_character()
+
+            if status:
+                player_status = True
+            else:
+                game.create_character()
         else:
             print(f"--- HELLO {player.name} ___")
             print("--- WARNING, TEST MODE ___")

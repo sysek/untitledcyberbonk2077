@@ -16,8 +16,6 @@ class Player:
     HP_MAX = 0
 
     def __init__(self, name):
-        self.HP = 35
-        self.HP_MAX = 35
         self.name = name
 
     def show_stats(self, stats=None):
